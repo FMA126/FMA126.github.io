@@ -1,19 +1,29 @@
 .masthead {
-  min-height: 30rem;
-  position: relative;
-  display: table;
+  // min-height: 30rem;
+  // position: relative;
+  // display: table;
+  // width: 100%;
+  // height: auto;
+  // padding-top: 8rem;
+  // padding-bottom: 8rem;
+  // background: linear-gradient(90deg, fade-out($white, 0.9) 0%, fade-out($white, 0.9) 100%), url('../img/naplescactus.jpg');
+  // background-position: center center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
   width: 100%;
   height: auto;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-  background: linear-gradient(90deg, fade-out($white, 0.9) 0%, fade-out($white, 0.9) 100%), url('../img/naplescactus.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.45), rgba(10,10,10,0.75)),url('../img/1QYu9wS.gif');
   background-size: cover;
+  background-repeat: no-repeat;
+  // background-position: 80% 100%;
+  background-attachment: fixed;
   h1 {
     font-size: 4rem;
     margin: 0;
     padding: 0;
+  }
+  h3 {
+    color: rgb(155,145,145);
   }
   @media (min-width: 992px) {
     height: 100vh;
