@@ -203,18 +203,6 @@ h6 {
   background: #343a40;
 }
 
-.service-icon {
-  background-color: #fff;
-  color: #1D809F;
-  height: 7rem;
-  width: 7rem;
-  display: block;
-  line-height: 7.5rem;
-  font-size: 2.25rem;
-  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
-}
-
 .callout {
   padding: 15rem 0;
   background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("../img/bg-callout.jpg");
