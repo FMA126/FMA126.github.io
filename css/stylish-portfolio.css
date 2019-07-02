@@ -362,3 +362,55 @@ a:hover, a:focus, a:active {
 .text-secondary {
   color: #ecb807 !important;
 }
+
+#services {
+  display: grid;
+  grid-template-columns: 50% auto;
+  height: auto;
+  align-self: center;
+}
+
+#skill-list {
+  list-style-type: none;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+
+#skill-list li {
+  display: grid;
+  grid-template-columns: 20% auto;
+  border-radius: 10px;
+  padding: 15px;
+  cursor: pointer;
+  -webkit-transform: rotateX(15deg) rotateY(-30deg);
+  transform: rotateX(15deg) rotateY(-30deg);
+  position: absolute;
+  border-bottom: 4px solid rbga(0, 0, 0, 0.2);
+}
+
+#skill-list li:nth-child(1) {
+  background: #6e96f0;
+  top: -105px;
+  z-index: 5;
+}
+
+#skill-list li:nth-child(2) {
+  background: #6e96f0;
+  z-index: 4;
+}
+
+#skill-list li:nth-child(3) {
+  background: #6e96f0;
+  top: 105px;
+  z-index: 3;
+}
+
+#skill-list li:nth-child(4) {
+  background: #6e96f0;
+  z-index: 2;
+}
+
+#skill-list li:nth-child(5) {
+  background: #6e96f0;
+  z-index: 1;
+}
