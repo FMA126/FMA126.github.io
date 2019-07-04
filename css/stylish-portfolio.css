@@ -92,6 +92,7 @@ h6 {
   background-image: linear-gradient(rgba(255, 255, 255, 0.45), rgba(10, 10, 10, 0.75)), url("../img/1QYu9wS.gif");
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .masthead h1 {
@@ -396,6 +397,10 @@ a:hover, a:focus, a:active {
 
 .newber {
   border-radius: 0 50% 50% 0;
+}
+
+.left-progess-skill {
+  border-radius: 10px 0 0 10px;
 }
 
 .cool-stripes {
