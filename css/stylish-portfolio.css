@@ -524,3 +524,7 @@ a:hover, a:focus, a:active {
 #skill-list-back li:hover {
   background: rgba(100, 100, 100, 0.8);
 }
+
+.icon-size {
+  font-size: 3rem;
+}
