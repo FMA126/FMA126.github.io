@@ -389,6 +389,9 @@ a:hover, a:focus, a:active {
   margin-bottom: -5px;
   -webkit-transform: rotateX(0deg) rotateY(-30deg);
   transform: rotateX(0deg) rotateY(-30deg);
+  -webkit-transition: margin 0.4s;
+  /* For Safari 3.1 to 6.0 */
+  transition: margin 0.4s;
   border-bottom: 4px solid rbga(0, 0, 0, 0.2);
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -448,6 +451,7 @@ a:hover, a:focus, a:active {
 
 #skill-list-front li:hover {
   background: rgba(100, 100, 100, 0.8);
+  margin: 0 0 1rem 0;
 }
 
 #skills-back {
@@ -476,6 +480,9 @@ a:hover, a:focus, a:active {
   margin-bottom: -5px;
   -webkit-transform: rotateX(0deg) rotateY(30deg);
   transform: rotateX(0deg) rotateY(30deg);
+  -webkit-transition: margin 0.4s;
+  /* For Safari 3.1 to 6.0 */
+  transition: margin 0.4s;
   border-bottom: 4px solid rbga(0, 0, 0, 0.2);
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -523,6 +530,7 @@ a:hover, a:focus, a:active {
 
 #skill-list-back li:hover {
   background: rgba(100, 100, 100, 0.8);
+  margin: 0 0 1rem 0;
 }
 
 .icon-size {

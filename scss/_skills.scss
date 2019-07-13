@@ -19,9 +19,8 @@
   cursor: pointer;
   margin-bottom: -5px;
   transform: rotateX(0deg) rotateY(-30deg);
-  // perspective: 200px;
-  // perspective-origin: left;
-  // position: absolute;
+  -webkit-transition: margin 0.4s; /* For Safari 3.1 to 6.0 */
+  transition: margin 0.4s;
   border-bottom: 4px solid rbga(0, 0, 0, .2);
   align-items: center;
 }
@@ -97,6 +96,7 @@
 
 #skill-list-front li:hover {
   background: rgba(100, 100, 100, 0.8);
+  margin: 0 0 1rem 0;
 }
 
 #skills-back {
@@ -121,9 +121,8 @@
   cursor: pointer;
   margin-bottom: -5px;
   transform: rotateX(0deg) rotateY(30deg);
-  // perspective: 200px;
-  // perspective-origin: left;
-  // position: absolute;
+  -webkit-transition: margin 0.4s; /* For Safari 3.1 to 6.0 */
+  transition: margin 0.4s;
   border-bottom: 4px solid rbga(0, 0, 0, .2);
   align-items: center;
 }
@@ -175,4 +174,5 @@
 
 #skill-list-back li:hover {
   background: rgba(100, 100, 100, 0.8);
+  margin: 0 0 1rem 0;
 }
