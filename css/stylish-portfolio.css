@@ -373,8 +373,70 @@ a:hover, a:focus, a:active {
   list-style-type: none;
   padding: 0;
   margin-right: 50px;
-  -webkit-perspective: 400px;
-  perspective: 400px;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.give-perspective {
+  -webkit-animation-name: show-perspective;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 0.5s;
+  /* Safari 4.0 - 8.0 */
+  animation-name: show-perspective;
+  animation-duration: 0.5s;
+}
+
+.take-perspective {
+  -webkit-animation-name: hide-perspective;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 2.5s;
+  /* Safari 4.0 - 8.0 */
+  animation-name: hide-perspective;
+  animation-duration: 2.5s;
+}
+
+@-webkit-keyframes show-perspective {
+  from {
+    -webkit-perspective: 10000px;
+    perspective: 10000px;
+  }
+  to {
+    -webkit-perspective: 400px;
+    perspective: 400px;
+  }
+}
+
+@keyframes show-perspective {
+  from {
+    -webkit-perspective: 10000px;
+    perspective: 10000px;
+  }
+  to {
+    -webkit-perspective: 400px;
+    perspective: 400px;
+  }
+}
+
+@-webkit-keyframes hide-perspective {
+  from {
+    -webkit-perspective: 400px;
+    perspective: 400px;
+  }
+  to {
+    -webkit-perspective: 10000px;
+    perspective: 10000px;
+  }
+}
+
+@keyframes hide-perspective {
+  from {
+    -webkit-perspective: 400px;
+    perspective: 400px;
+  }
+  to {
+    -webkit-perspective: 10000px;
+    perspective: 10000px;
+  }
 }
 
 #skill-list-front li {
@@ -462,10 +524,10 @@ a:hover, a:focus, a:active {
 
 #skill-list-back {
   list-style-type: none;
-  -webkit-perspective: 400px;
-  perspective: 400px;
   padding: 0;
   margin-left: 50px;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 #skill-list-back li {

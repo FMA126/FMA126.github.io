@@ -7,9 +7,46 @@
   list-style-type: none;
   padding: 0;
   margin-right: 50px;
-  perspective: 400px;
-  // perspective-origin: 30% 30%;
+  animation-fill-mode: forwards;
 }
+
+.give-perspective {
+  -webkit-animation-name: show-perspective; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+  animation-name: show-perspective;
+  animation-duration: 0.5s;
+}
+
+.take-perspective {
+  -webkit-animation-name: hide-perspective; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 2.5s; /* Safari 4.0 - 8.0 */
+  animation-name: hide-perspective;
+  animation-duration: 2.5s;
+}
+
+@-webkit-keyframes show-perspective {
+  from {perspective: 10000px;}
+  to {perspective: 400px;}
+}
+
+
+@keyframes show-perspective {
+  from {perspective: 10000px;}
+  to {perspective: 400px;}
+}
+
+@-webkit-keyframes hide-perspective {
+  from {perspective: 400px;}
+  to {perspective: 10000px;}
+}
+
+
+@keyframes hide-perspective {
+  from {perspective: 400px;}
+  to {perspective: 10000px;}
+}
+
+
 
 #skill-list-front li {
   display: flex;
@@ -107,10 +144,9 @@
 
 #skill-list-back {
   list-style-type: none;
-  perspective: 400px;
   padding: 0;
   margin-left: 50px;
-  // perspective-origin: 30% 30%;
+  animation-fill-mode: forwards;
 }
 
 #skill-list-back li {
