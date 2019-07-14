@@ -516,6 +516,11 @@ a:hover, a:focus, a:active {
   margin: 0 0 1rem 0;
 }
 
+#skill-list-front li:last-child:hover {
+  background: rgba(100, 100, 100, 0.8);
+  margin: 1rem 0 0 0;
+}
+
 #skills-back {
   height: auto;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(10, 10, 10, 0.75)), to(rgba(255, 255, 255, 0.45)));
@@ -593,6 +598,11 @@ a:hover, a:focus, a:active {
 #skill-list-back li:hover {
   background: rgba(100, 100, 100, 0.8);
   margin: 0 0 1rem 0;
+}
+
+#skill-list-back li:last-child:hover {
+  background: rgba(100, 100, 100, 0.8);
+  margin: 1rem 0 0 0;
 }
 
 .icon-size {
