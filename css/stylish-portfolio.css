@@ -288,12 +288,12 @@ h6 {
   }
 }
 
-footer.footer {
+footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
 
-footer.footer .social-link {
+footer .social-link {
   display: block;
   height: 4rem;
   width: 4rem;
@@ -302,13 +302,51 @@ footer.footer .social-link {
   background-color: #1D809F;
   -webkit-transition: background-color 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out;
-  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+  -webkit-animation-name: glower;
+  animation-name: glower;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  -webkit-box-shadow: 0 0 10px 20px #7ebdb2;
+  box-shadow: 0 0 10px 20px #7ebdb2;
 }
 
-footer.footer .social-link:hover {
+footer .social-link:hover {
   background-color: #155d74;
   text-decoration: none;
+}
+
+@-webkit-keyframes glower {
+  0% {
+    -webkit-box-shadow: 0 0 0px 0px #7ebdb2;
+    box-shadow: 0 0 0px 0px #7ebdb2;
+  }
+  50% {
+    -webkit-box-shadow: 0 0 20px 20px #7ebdb2;
+    box-shadow: 0 0 20px 20px #7ebdb2;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0px 0px #7ebdb2;
+    box-shadow: 0 0 0px 0px #7ebdb2;
+  }
+}
+
+@keyframes glower {
+  0% {
+    -webkit-box-shadow: 0 0 0px 0px #7ebdb2;
+    box-shadow: 0 0 0px 0px #7ebdb2;
+  }
+  50% {
+    -webkit-box-shadow: 0 0 20px 20px #7ebdb2;
+    box-shadow: 0 0 20px 20px #7ebdb2;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0px 0px #7ebdb2;
+    box-shadow: 0 0 0px 0px #7ebdb2;
+  }
 }
 
 a {

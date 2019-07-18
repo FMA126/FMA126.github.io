@@ -1,4 +1,4 @@
-footer.footer {
+footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
   .social-link {
@@ -9,10 +9,26 @@ footer.footer {
     font-size: 1.5rem;
     background-color: $primary;
     transition: background-color 0.15s ease-in-out;
-    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+    animation-name: glower;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    box-shadow: 0 0 10px 20px rgb(126, 189, 178);
     &:hover {
       background-color: darken($primary, 10%);
       text-decoration: none;
     }
   }
+}
+
+@-webkit-keyframes glower {
+  0% {box-shadow: 0 0 0px 0px rgb(126, 189, 178);}
+  50% {box-shadow: 0 0 20px 20px rgb(126, 189, 178);}
+  100% {box-shadow: 0 0 0px 0px rgb(126, 189, 178);}
+}
+
+@keyframes glower {
+  0% {box-shadow: 0 0 0px 0px rgb(126, 189, 178);}
+  50% {box-shadow: 0 0 20px 20px rgb(126, 189, 178);}
+  100% {box-shadow: 0 0 0px 0px rgb(126, 189, 178);}
 }
