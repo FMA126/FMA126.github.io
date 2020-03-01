@@ -632,6 +632,14 @@ a:hover, a:focus, a:active {
   }
 }
 
+.devicon-redux {
+  max-width: 1em;
+}
+
+.devicon-redux path:nth-last-of-type(1) {
+  fill: #ffffff;
+}
+
 .icon-size {
   font-size: 3rem;
 }

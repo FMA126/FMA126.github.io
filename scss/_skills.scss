@@ -241,3 +241,11 @@
     margin: 1rem 0 0 0;
   }
 }
+
+.devicon-redux {
+  max-width: 1em;
+}
+
+.devicon-redux path:nth-last-of-type(1) {
+  fill: #ffffff;
+}
